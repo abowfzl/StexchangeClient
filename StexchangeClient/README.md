@@ -13,8 +13,10 @@ services.AddStexchangeClient("your base address")
 Then use **IStexchangeRestClient** interface in your services to make requests
 
 ## Release notes
+	* Version 1.0.5 - 10 Sep 2023
+		* Undo renamed properties
 	* Version 1.0.4 - 09 Sep 2023
-		* change json formatted details in update balance
+		* Change json formatted details in update balance
 	* Version 1.0.3 - 12 Aug 2023
 		* Force upper case asset name
 

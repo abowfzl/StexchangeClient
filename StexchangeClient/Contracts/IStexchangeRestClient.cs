@@ -13,7 +13,7 @@ namespace StexchangeClient.Contracts
     {
         #region Assert
 
-        Task<UpdateBalanceResponse> UpdateBalance<T>(int requestId, int userId, string assetName, string businessType, int businessId, decimal normalizeBalanceChange, T details, CancellationToken cancellationToken);
+        Task<UpdateBalanceResponse> UpdateBalance<T>(int requestId, int userId, string assetName, string businessType, int businessId, decimal balanceChange, T details, CancellationToken cancellationToken);
 
         Task<PagedStexchangeResponse<BalanceHistoryDetail>> GetBalanceHistory(int requestId, int userId, CancellationToken cancellationToken, string assetName = null, string businessType = null, double startTime = 0, double endTime = 0, int offset = 0, int limit = 0, int beforeId = 0, int afterId = 0);
 

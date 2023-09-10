@@ -33,7 +33,7 @@ namespace StexchangeClient
 
         #region Assets
 
-        public async Task<UpdateBalanceResponse> UpdateBalance<T>(int requestId, int userId, string assetName, string businessType, int businessId, decimal normalizeBalanceChange, T details, CancellationToken cancellationToken)
+        public async Task<UpdateBalanceResponse> UpdateBalance<T>(int requestId, int userId, string assetName, string businessType, int businessId, decimal balanceChange, T details, CancellationToken cancellationToken)
         {
             var jsonFormattedDetails = JsonConvert.SerializeObject(details);
 
@@ -45,7 +45,7 @@ namespace StexchangeClient
                 assetName.ToUpper(),
                 businessType.ToLower(),
                 businessId,
-                normalizeBalanceChange.ToString(),
+                balanceChange.ToString(),
                 DictionaryFormattedDetails!
             };
 

@@ -8,11 +8,13 @@
 		<Title>Stexchange Rest API</Title>
 		<Description>A base package for wrapping Stexchange API's</Description>
 		<PackageId>StexchangeClient.Net</PackageId>
-		<PackageReleaseNotes>- change json formatted details in update balance</PackageReleaseNotes>
+		<PackageReleaseNotes>
+			- Undo renamed properties
+		</PackageReleaseNotes>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Company>Exbito</Company>
 		<Authors>Abowfzl</Authors>
-		<Version>1.0.4</Version>
+		<Version>1.0.5</Version>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>Exbito Icon.png</PackageIcon>
 	</PropertyGroup>
