@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using StexchangeClient.Enums;
 
 namespace StexchangeClient.Models.Response.Orders
 {
@@ -17,7 +18,7 @@ namespace StexchangeClient.Models.Response.Orders
         public string Deal { get; set; }
 
         [JsonProperty("role")]
-        public int Role { get; set; }
+        public UserRole Role { get; set; }
 
         [JsonProperty("amount")]
         public string Amount { get; set; }
@@ -31,7 +32,7 @@ namespace StexchangeClient.Models.Response.Orders
         [JsonProperty("fee")]
         public string Fee { get; set; }
 
-        [JsonProperty("order_id")]
-        public int OrderId { get; set; }
+        [JsonProperty("side")]
+        public OrderSide Side { get; set; }
     }
 }

@@ -9,12 +9,13 @@
 		<Description>A base package for wrapping Stexchange API's</Description>
 		<PackageId>StexchangeClient.Net</PackageId>
 		<PackageReleaseNotes>
-			- Undo renamed properties
+			- Fix order side in user market deals
+			- Add UserRole enum
 		</PackageReleaseNotes>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Company>Exbito</Company>
 		<Authors>Abowfzl</Authors>
-		<Version>1.0.5</Version>
+		<Version>1.0.6</Version>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>Exbito Icon.png</PackageIcon>
 	</PropertyGroup>
