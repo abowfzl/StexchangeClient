@@ -1,8 +1,8 @@
 # StexchangeClient.Net
 
-StexchangeClient.Net is a wrapper around the Stexchange API's in C#. This library offers methods for creating REST request to Stexchange with custom exceptions.
+StexchangeClient.Net is base class lib to wrapper around the Stexchange API's in C#. This library offers suitable methods with optional parameter for creating REST request to Stexchange and raise diffrent types of exceptions to handel varity of senarios which is possible.
 
-Using dotnet dependency inject
+## Using dotnet dependency injection to inject this lib to your program:
 
 ```
 
@@ -10,7 +10,7 @@ services.AddStexchangeClient("your base address")
 
 ```
 
-Then use **IStexchangeRestClient** interface in your services to make requests
+`IStexchangeRestClient` is an interface which is represent a this functional methods that you inject it to your class and use it in your services to make requests
 
 ## Release notes
 	* Version 1.0.6 - 18 Sep 2023
